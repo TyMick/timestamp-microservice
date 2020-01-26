@@ -46,11 +46,12 @@
                 />
               </div>
               <small id="inputHelp" class="form-text text-muted">
-                Note that date strings must be in a format recognized by
-                <code class="text-reset">Date.parse()</code>, such as
-                <samp>2020-01-25</samp> or
-                <samp>2020-01-25T16:46:50-06:00</samp>, to get a meaningful
-                result.
+                Note that the input must be either blank or
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date#Parameters"
+                  >a string or number recognized by <code>new Date()</code></a
+                >
+                to get a meaningful result.
               </small>
             </div>
 
@@ -60,9 +61,7 @@
           <h5>API output:</h5>
 
           <div class="card">
-            <pre id="apiOutput" class="hljs bg-white mb-0">
-              <br/><br/>
-            </pre>
+            <pre id="apiOutput" class="hljs bg-white mb-0">&#8203;</pre>
           </div>
         </div>
       </div>
@@ -129,10 +128,8 @@
           >
         </li>
         <li>
-          If the date string is <strong>invalid</strong> the api returns a JSON
-          having the structure
-          <code>{"unix": null, "utc": "Invalid Date" }</code>. It is what you
-          get from the date manipulation functions used above.
+          If the date string is <strong>invalid</strong> the api returns
+          <code>{"error": "Invalid Date"}</code>.
         </li>
       </ol>
     </div>
