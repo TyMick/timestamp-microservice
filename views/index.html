@@ -143,15 +143,17 @@
 
     <!-- API test script -->
     <script>
-      $("#apiTest").submit(function() {
-        event.preventDefault();
-        $.ajax({
-          url: "/api/timestamp/" + $("#apiInput").val(),
-          type: "get",
-          success: function(result) {
-            $("#apiOutput").text(JSON.stringify(result, null, 2));
-            hljs.highlightBlock(document.getElementById("apiOutput"));
-          }
+      $(function() {
+        $("#apiTest").submit(function() {
+          event.preventDefault();
+          $.ajax({
+            url: "/api/timestamp/" + $("#apiInput").val(),
+            type: "get",
+            success: function(result) {
+              $("#apiOutput").text(JSON.stringify(result, null, 2));
+              hljs.highlightBlock(document.getElementById("apiOutput"));
+            }
+          });
         });
       });
     </script>
