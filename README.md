@@ -1,6 +1,6 @@
 # Timestamp microservice
 
-I created this microservice in fulfillment of [freeCodeCamp](https://freecodecamp.org)'s APIs and Microservices Project [Timestamp Microservice](https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/timestamp-microservice), using [Node.js](https://nodejs.org/en/) and [Express](https://expressjs.com/). The front end API test on the main page also uses [Bootstrap](https://getbootstrap.com/), [jQuery](https://jquery.com/), and [highlight.js](https://highlightjs.org/). The API fulfills the following user stories:
+I created this app as a requirement for [my freeCodeCamp APIs and Microservices Certification](https://www.freecodecamp.org/certification/tywmick/apis-and-microservices), using [Node.js](https://nodejs.org/en/) and [Express](https://expressjs.com/). The front end API test on the main page also uses [Bootstrap](https://getbootstrap.com/), [jQuery](https://jquery.com/), and [highlight.js](https://highlightjs.org/). The API fulfills the following user stories:
 
 1.  The API endpoint is `GET [project_url]/api/timestamp/:date_string?`
 2.  A date string is valid if can be successfully parsed by `new Date(date_string)`.
